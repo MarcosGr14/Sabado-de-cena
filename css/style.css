@@ -1,0 +1,53 @@
+:root{--bg:#fffdfa;--tx:#3a3a3a;--mu:#7a7267;--ln:#c9b79c;--pk:#fde3dc;--cr:#faeee0;--ac:#c4553a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#1d1a17;--tx:#ece6dc;--mu:#a89f92;--ln:#6b5d4a;--pk:#3a2a27;--cr:#2a251f;--ac:#ee8a70}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 Lora,Georgia,serif}
+h1,h2,h3,.lb,button,.kick{font-family:Outfit,"Trebuchet MS",system-ui,sans-serif}
+.lb,.kick,h3{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:600}
+.top{background:var(--pk);padding:10px 16px;text-align:center}
+main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
+header{text-align:center;padding:28px 0 18px;border-bottom:2px solid var(--tx);margin-bottom:22px}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.05;margin:6px 0;font-weight:700}
+h1{font-family:"Bodoni Moda",Georgia,serif}
+.sub{color:var(--mu);font-style:italic;margin:0}
+.rota{text-align:center;margin-bottom:22px}
+.rota .row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.b{border:1.5px solid var(--tx);background:transparent;color:var(--tx);padding:8px 16px;font-size:.92rem;cursor:pointer;border-radius:0}
+.b.on{background:var(--tx);color:var(--bg)}
+.b:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.next{color:var(--mu);font-size:.92rem}
+.bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;margin-bottom:22px;padding:14px 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.go{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:20px}
+.card{cursor:pointer;text-align:left;border:0;background:none;color:inherit;padding:0;font-family:inherit}
+.card .im{background:var(--cr);border:1px solid var(--ln);aspect-ratio:4/5;display:grid;place-items:center;font-size:4.6rem;position:relative}
+.card h2{font-size:1.05rem;margin:10px 0 2px;line-height:1.25}
+.card p{margin:0;color:var(--mu);font-size:.86rem}
+.mk{position:absolute;top:8px;right:10px;font-size:1rem}
+.sheet{max-width:860px;margin:0 auto}
+.kick{text-align:center;margin:8px 0 10px}
+.head{display:grid;grid-template-columns:1fr 2fr 1fr;gap:10px;align-items:center;text-align:center;border-top:2px solid var(--ln);border-bottom:2px solid var(--ln);padding:14px 0}
+.head h2{font-size:clamp(1.6rem,5.5vw,2.8rem);line-height:1.05;margin:0;text-transform:uppercase}
+.side .lb{display:block;color:var(--mu)}
+.side span{font-family:Outfit,sans-serif;font-size:1.1rem}
+.stp{display:flex;justify-content:center;align-items:center;gap:8px}
+.stp button{width:30px;height:30px;padding:0;border:1.5px solid var(--tx);background:none;color:var(--tx);font-size:1.1rem;cursor:pointer}
+.hero{background:var(--cr);text-align:center;font-size:6rem;padding:26px 0;margin:14px 0;border-bottom:2px solid var(--ln)}
+.cols{display:grid;grid-template-columns:1fr 1.25fr;gap:0}
+.cols>div:first-child{border-right:2px solid var(--ln);padding-right:22px}
+.cols>div+div{padding-left:22px}
+.cols h3{margin:0 0 8px}
+ul,ol{margin:0;padding-left:20px}
+li{margin-bottom:6px}
+.tip{background:var(--cr);padding:16px 18px;margin-top:20px}
+.tip p{margin:6px 0 0}
+.acts{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:26px;padding-top:18px;border-top:2px solid var(--ln)}
+.back{margin-bottom:8px}
+@media(max-width:640px){.head{grid-template-columns:1fr 1fr}.head h2{grid-column:1/-1;order:-1}.cols{grid-template-columns:1fr}.cols>div:first-child{border-right:0;padding-right:0;margin-bottom:18px}.cols>div+div{padding-left:0}}
+header{position:relative}
+.tg{position:absolute;right:0;top:14px;padding:6px 12px;font-size:.8rem}
+.im{overflow:hidden}.im img{width:100%;height:100%;object-fit:cover;display:block}
+.hero img{width:100%;height:320px;object-fit:cover;display:block}.hero:has(img){padding:0}
+.footer{border-top:1px solid var(--ln);padding:20px 16px calc(20px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--mu);font-size:.88rem}
+.footer p{margin:2px 0}.footer__brand{font-family:Outfit,"Trebuchet MS",system-ui,sans-serif;color:var(--tx);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
